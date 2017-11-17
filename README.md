@@ -1,3 +1,6 @@
+# 使用yarn安装依赖
+# 支持到IE10
+
 # Demo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.2.
