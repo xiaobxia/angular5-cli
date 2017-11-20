@@ -1,3 +1,6 @@
 <p>
   hero works!
 </p>
+<app-hero-card *ngFor="let hero of heroes; let i = index" [hero]="hero" [index]="i">
+{{i}}
+</app-hero-card>

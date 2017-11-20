@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {NgModule, OnInit} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {DashboardRoutingModule} from './dashboard.routing.module';
 import {DashboardComponent} from './dashboard.component';
@@ -8,6 +8,6 @@ import {DashboardComponent} from './dashboard.component';
   declarations: [DashboardComponent]
 })
 
-export class DashboardModule {
+export class DashboardModule implements OnInit{
 
 }

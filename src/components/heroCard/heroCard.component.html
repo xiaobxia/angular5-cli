@@ -6,4 +6,5 @@
   <label>英雄的年龄<input type="text" [(ngModel)]="hero.age"></label>
   <!--事件绑定-->
   <button (click)="onConsoleHandler(hero)" [class.on]="(hero.age%2) === 0">打印英雄</button>
+  <p>content: <ng-content></ng-content></p>
 </div>
