@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import {Hero} from '../../models/index';
 @Component({
-  selector: 'app-hero',
+  selector: 'app-hero-card',
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss']
 }) // 装饰器后面不能换行
@@ -18,5 +18,4 @@ export class HeroComponent implements OnInit {
   onConsoleHandler(hero: Hero): void {
     console.log(hero);
   }
-
 }
