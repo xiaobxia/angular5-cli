@@ -12,10 +12,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-
+  input1 = 1;
+  input2 = 2;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  getResult(): number {
+    return this.input1 + this.input2;
+  }
+
+  input1change() {
+    console.log('change');
+  }
+
+  printResult() {
+    console.log(this.input1 + this.input2);
   }
 
 }

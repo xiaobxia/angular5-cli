@@ -1,7 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import { RouterModule, PreloadAllModules } from '@angular/router';
-
 import {routes} from './app.routing.module';
 import {AppComponent} from './app.component';
 

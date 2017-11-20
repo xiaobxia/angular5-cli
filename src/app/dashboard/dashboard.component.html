@@ -1,3 +1,18 @@
-<p>
+<p  [ngClass]="{a: true, b:false}" [style.color]="'red'">
   dashboard works!
+
+  <input type="text" [(ngModel)]="input1" (ngModelChange)="input1change()">
+  <!--相当于ref-->
+  <input #phone type="text" [(ngModel)]="input2">
 </p>
+<!--绑定的一种写法-->
+<p bind-class="'result'+1">结果1:{{input1 + input2}}</p>
+<!--事件的一种写法-->
+<p [class.on]="true" on-click="printResult()">结果2:{{getResult()}}</p>
+<!--原生html-->
+<span [innerHTML]="'<i>title</i>'"></span>
+<div [ngSwitch]="input1">
+  <span *ngSwitchCase="1">出现</span>
+</div>
+
+

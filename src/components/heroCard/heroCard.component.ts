@@ -11,13 +11,15 @@ export class HeroCardComponent implements OnInit {
   // Input是父组件传过来的props
   @Input() hero: Hero;
   @Input() index: number;
+  // @Output一般用在事件上
 
   ngOnInit() {
     console.log(this.index);
     console.log(this.hero);
   }
   // 没有返回值
-  onConsoleHandler(hero: Hero): void {
+  onConsoleHandler(event, hero: Hero): void {
+    console.log(event);
     console.log(hero);
   }
 }
