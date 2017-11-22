@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router';
 
 import {HeroComponent} from './hero.component';
+import {HeroDetailComponent} from './detail/heroDetail.component';
 /**
  * 把RouterModule添加到路由模块的exports中，
  * 以便关联模块（比如AppModule）中的组件可以访问路由模块中的声明，
@@ -11,7 +12,8 @@ import {HeroComponent} from './hero.component';
 
 @NgModule({
   imports: [RouterModule.forChild([
-    {path: '', component: HeroComponent}
+    {path: '', component: HeroComponent},
+    {path: 'detail/:id', component: HeroDetailComponent}
   ])],
   exports: [RouterModule]
 })

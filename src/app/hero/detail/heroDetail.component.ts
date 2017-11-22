@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
-import {Hero} from '../../models/index';
+import {Hero} from '../../../models/index';
 /**
  * 组件类应保持精简。
  * 组件本身不从服务器获得数据、不进行验证输入，也不直接往控制台写日志。
@@ -9,10 +9,10 @@ import {Hero} from '../../models/index';
  */
 // 路由组件不需要selector
 @Component({
-  templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.scss']
+  templateUrl: './heroDetail.component.html',
+  styleUrls: ['./heroDetail.component.scss']
 })
-export class HeroComponent implements OnInit {
+export class HeroDetailComponent implements OnInit {
 
   constructor( private router: Router,
                private location: Location) { }

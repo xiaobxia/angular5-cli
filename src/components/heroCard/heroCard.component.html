@@ -2,9 +2,5 @@
 <div class="hero-wrap" *ngIf="hero">
   <h3>英雄的名字：{{hero.name}}</h3>
   <p>英雄的年龄：{{hero.age}}</p>
-  <!--双向绑定-->
-  <label>英雄的年龄<input type="text" [(ngModel)]="hero.age"></label>
-  <!--事件绑定-->
-  <button (click)="onConsoleHandler($event, hero)" [class.on]="(hero.age%2) === 0">打印英雄</button>
-  <p>content: <ng-content></ng-content></p>
+  <p>child: <ng-content></ng-content></p>
 </div>

@@ -1,7 +1,5 @@
-<p>
-  hero works!
-</p>
-<button (click)="jumpToDashboard()">路由跳转到dashboard</button>
+<p></p>
+<button (click)="jumpToDashboard()">路由跳转</button>
 <button (click)="goBack()">返回按钮</button>
 <app-hero-card *ngFor="let hero of heroes; let i = index" [hero]="hero" [index]="i">
 {{i}}
