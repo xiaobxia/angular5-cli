@@ -1,7 +1,8 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import { HttpModule } from '@angular/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
-import {routes} from './app.routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import {AppComponent} from './app.component';
 
 
@@ -14,7 +15,8 @@ import {AppComponent} from './app.component';
   // 本模块声明的组件模板需要的类所在的其它模块
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes, { useHash: true, preloadingStrategy: PreloadAllModules })
+    HttpModule,
+    AppRoutingModule
   ],
   // 服务的创建者，并加入到全局服务列表中，可用于应用任何部分。
   providers: [],
