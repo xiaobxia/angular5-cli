@@ -17,6 +17,7 @@ import {AppComponent} from './app.component';
     BrowserModule,
     HttpModule,
     AppRoutingModule,
+    // 在root中也要引入一次antd
     NgZorroAntdModule.forRoot()
   ],
   // 服务的创建者，并加入到全局服务列表中，可用于应用任何部分。

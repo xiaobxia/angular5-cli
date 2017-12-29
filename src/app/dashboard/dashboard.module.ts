@@ -9,6 +9,7 @@ import {DashboardComponent} from './dashboard.component';
   imports: [
     CommonModule,
     DashboardRoutingModule,
+    // 每个模块都要引入一次antd
     NgZorroAntdModule,
     FormsModule
   ],
